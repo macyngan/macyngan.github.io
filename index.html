@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Macy Ngan</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="myApp">
+    <div class="container" ng-controller="loadPortfolio">
+      <h1 class="title">Macy Ngan</h1>
+      <hr/>
+      <div class="row mx-auto">
+        <div id="webpagespeedModalCard" class="card" style="width: 22rem;">
+          <a href='./projects/webpagespeed.html'>
+            <img class="card-img-top" src="./images/webpagetest/thumbnail.png" alt="Webpage Speed">
+          </a>
+        </div>
+        <div class="card" style="width: 22rem;">
+          <a href='./projects/mortgageCalculator.html'>
+            <img class="card-img-top" src="./images/mortgageCalculator/thumbnail.png" alt="Mortgage Calculator">
+          </a>
+        </div>
+        <div class="card" style="width: 22rem;">
+          <img class="card-img-top" src="images/600x400_p1.png" alt="Webpage Speed">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="webpagespeedModal" tabindex="-1" role="dialog" aria-labelledby="webpagespeedModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">WebpageSpeed</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <a href='/projects/webpagespeed.html'>
+              <img src="images/webpagetest/screenshot_00.png"/>
+            </a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript/vendor/jquery-3.2.1.min.js"></script>
+    <script src="javascript/vendor/bootstrap.bundle.min.js"></script>
+    <script src="javascript/vendor/angular.min.js"></script>
+    <script src="javascript/app.js"></script>
+</body>
+</html>
