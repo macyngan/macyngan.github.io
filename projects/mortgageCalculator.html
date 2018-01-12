@@ -3,22 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Macy Ngan</title>
-    <link rel="icon" href="./../images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="./../css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./../css/style.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
-<body>
+<body ng-app="myApp">
     <div class="container" ng-controller="loadPortfolio">
-      <h1 class="title"> Mortgage Calculator </h1>
-      <hr/>
-      <div class="display">
-        <img src="./../images/mortgageCalculator/mortgage-calculator-demo.gif"/>
-      </div>
-      <hr/>
-      <div class="display">
-        <img src="./../images/mortgageCalculator/screenshot_01.png"/>
-      </div>
-      <hr/
+        <div class="nav">
+            <div id="logo">
+                <h1 class="title">
+                    <a href="../index.html">Macy Ngan</a>
+                </h1>
+
+                <div id="description">Full-Stack Software Engineer</div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="../index.html">Portfolio</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+
+        <div>
+            <h2> Mortgage Calculator </h2>
+            <div class="display">
+                <img src="./../images/mortgageCalculator/mortgage-calculator-demo.gif"/>
+            </div>
+            <hr/>
+            <div class="display">
+                <img src="./../images/mortgageCalculator/screenshot_01.png"/>
+            </div>
+            <hr/>
+        </div>
     </div>
 </body>
 </html>
