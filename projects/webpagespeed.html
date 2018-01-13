@@ -7,8 +7,9 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
-<body ng-app="myApp">
-    <div class="container" ng-controller="loadPortfolio">
+<body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <div class="container">
         <div class="nav">
             <div id="logo">
                 <h1 class="title">
@@ -26,37 +27,97 @@
         </div>
         <hr/>
 
-        <div>
-            <h2> WebpageSpeed </h2>
-
-            <div class="display">
-                <img src="./../images/webpagetest/webpagetest-demo.gif"/>
+        <div class="projectDescription">
+            <br/>
+            <div>
+                <h2 class="projectTitle-webpagespeed"> WebPageSpeed </h2>
             </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/webpagetest/screenshot_00.png"/>
+            <div>
+                <h4>Why I build WebPageSpeed</h4>
+                <p>
+                    Many companies measure web performance using webpagetest, a tool being developed by Google.
+                    After each release, engineers will go to webpagetest.org, enter the url, click start test,
+                    wait for the test to finish, then record the number in an excel sheet. If a company has multiple
+                    websites, this process has to repeat several times for each release. It requires a lot of manual
+                    effort and the data in the excel sheet could be more useful if we can visualize it.
+                </p>
+                <p>
+                    WebPageSpeed is a test management system that will run the performance tests for all your websites
+                    and record the data for you with one click. It also provides a dashboard for you to visualize the
+                    load time history.
+                </p>
             </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/webpagetest/screenshot_01.png"/>
+            <br/>
+            <div>
+                <h4>How does WebPageSpeed work</h4>
+                <div>
+                    <h5>(1) Sign up or login</h5>
+                    <img src="./../images/webpagetest/img02_login.png" alt="login page"/>
+                </div>
+                <div>
+                    <h5>(2) Create a bundle that includes the website urls that you want to do performance testing</h5>
+                    <img src="./../images/webpagetest/gif01_add_bundle.gif" alt="add bundle"/>
+                </div>
+                <div>
+                    <h5>(3) Go to dashboard, select the bundle, click run tests</h5>
+                    <img src="./../images/webpagetest/gif02_run_test.gif" alt="run test"/>
+                </div>
+                <div>
+                    <h5>(4) When tests completed, page will refresh with result</h5>
+                    <img src="./../images/webpagetest/gif03_test_finished.gif" alt="test finished"/>
+                </div>
+                <div>
+                    <h5>(5) Click the bottom of the card to see more details</h5>
+                    <img src="./../images/webpagetest/gif04_test_detail.gif" alt="more details"/>
+                </div>
+                <div>
+                    <h5>(6) Click the Summary Url arrow to go to webpagetest page to see detail breakdown</h5>
+                    <img src="./../images/webpagetest/gif05_webpagetest.gif" alt="webpagetest site"/>
+                </div>
             </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/webpagetest/screenshot_05.png"/>
+            <br/>
+            <div>
+                <h4>Screenshots:</h4>
+                <div>
+                    <h5> Dashboard displays 6 most recent load time for each site</h5>
+                    <img src="./../images/webpagetest/screenshot00_dashboard.png" alt="dashboard"/>
+                </div>
+                <div>
+                    <h5>
+                        Site details page displays all history, you can see the full test report by clicking
+                        the summary url or delete individual data by clicking the trash can button
+                    </h5>
+                    <img src="./../images/webpagetest/screenshot01_details.png" alt="all history"/>
+                </div>
+                <div>
+                    <h5> Sites can be group by bundle</h5>
+                    <img src="./../images/webpagetest/screenshot02_group_bundle.png" alt="bundle"/>
+                </div>
             </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/webpagetest/screenshot_02.png"/>
-            </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/webpagetest/screenshot_03.png"/>
-            </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/webpagetest/screenshot_04.png"/>
+            <br/><br/>
+            <div>
+                <h3>Demo Video:</h3>
+                <iframe allowFullScreen frameborder="0" height="564" mozallowfullscreen src="https://player.vimeo.com/video/250953763" webkitAllowFullScreen width="640"></iframe>
             </div>
         </div>
     </div>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            } else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 </html>
