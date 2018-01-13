@@ -2,7 +2,7 @@ body {
     font-family: 'Lato', sans-serif;
     line-height: 145%;
     max-width: 1350px;
-    margin:0 auto;
+    margin:22px auto;
 }
 
 .title {
@@ -71,8 +71,8 @@ hr {
 }
 
 #menu {
-    margin-left: 20px;
-    padding-bottom: 18px;
+    margin-left: 24px;
+    padding-bottom: 8px;
 }
 
 #menu a {
@@ -149,6 +149,7 @@ li a {
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
+    min-width: 40px;
 }
 
 /* about page*/
