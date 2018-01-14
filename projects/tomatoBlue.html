@@ -7,61 +7,107 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
-<body ng-app="myApp">
-    <div class="container" ng-controller="loadPortfolio">
-        <div class="nav">
-            <div id="logo">
-                <h1 class="title">
-                    <a href="../index.html">Macy Ngan</a>
-                </h1>
+<body>
+<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+<div class="container">
+    <div class="nav">
+        <div id="logo">
+            <h1 class="title">
+                <a href="../index.html">Macy Ngan</a>
+            </h1>
 
-                <div id="description">Full-Stack Software Engineer</div>
-            </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="../index.html">Portfolio</a></li>
-                    <li><a href="../about.html">About</a></li>
-                </ul>
-            </div>
+            <div id="description">Full-Stack Software Engineer</div>
         </div>
-        <hr/>
-
-        <div>
-            <h2> Tomato Blue </h2>
-
-            <div class="display">
-                <img src="./../images/tomatoBlue/tomato-blue-demo.gif"/>
-            </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/tomatoBlue/screenshot_01.png"/>
-            </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/tomatoBlue/screenshot_02.png"/>
-            </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/tomatoBlue/screenshot_03.png"/>
-            </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/tomatoBlue/screenshot_04.png"/>
-            </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/tomatoBlue/screenshot_05.png"/>
-            </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/tomatoBlue/screenshot_06.png"/>
-            </div>
-            <hr/>
-            <div class="display">
-                <img src="./../images/tomatoBlue/screenshot_07.png"/>
-            </div>
-            <hr/>
+        <div id="menu">
+            <ul>
+                <li><a href="../index.html">Portfolio</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
         </div>
     </div>
+    <hr/>
+
+    <div class="projectDescription">
+        <br/>
+        <div>
+            <h2 class="projectTitle-tomatoBlue"> Tomato Blue </h2>
+        </div>
+        <div>
+            <h4>Why I build Tomato Blue</h4>
+            <p>
+                UI Automation tests are super efficient, it automates the tests that QA used to perform manually, but
+                in most cases, only automation engineers execute the automation test because it's not that easy for
+                people who didn't write the automation test to execute it. The process is like, developers check in the
+                code, ask automation engineer to kick off the automation tests, automation engineer execute the
+                test and let the developer know if all tests passed. If something failed, developer has to fixed the
+                bug and repeat this process again. Sometimes one automation engineer is shared between 4~5 developers,
+                if the automation engineer is busy at the moment, developers might not able to get feedback immediately.
+            </p>
+            <p>
+                Tomato Blue is an User Interface for the automation tests. Using Tomato Blue, you don't need to know
+                the coding for the automation tests but still able to select which area you want to test and execute
+                the test. Every time you execute the test, a report is generated. If something failed, you can go back
+                to the reports and figure out when the feature is last tested. With Tomato Blue, developer and
+                manual QA can utilize the automation test easily.
+            </p>
+        </div>
+        <br/>
+        <div>
+            <h4>How does Tomato Blue work</h4>
+            <div>
+                <h5>(1) Home page displays all projects, select your project</h5>
+                <img src="./../images/tomatoBlue/img01_homepage.png" alt="home page"/>
+            </div>
+            <div>
+                <h5>(2) Select which area you want to test, then click run test</h5>
+                <img src="./../images/tomatoBlue/gif01_run_test.gif" alt="run test"/>
+            </div>
+            <div>
+                <h5>(3) A test report is generated when tests completed, click to view it</h5>
+                <img src="./../images/tomatoBlue/gif02_test_report.gif" alt="test report"/>
+            </div>
+            <div>
+                <h5>(4) Use the edit button to view the coding behind the test case</h5>
+                <img src="./../images/tomatoBlue/gif03_code.gif" alt="code for test case"/>
+            </div>
+        </div>
+        <br/>
+        <div>
+            <h4>Screenshots:</h4>
+            <div>
+                <h5> The test cases are written in <a class="externalLink" href="https://cucumber.io" target="_blank">Cucumber</a> which can be use as product documentation</h5>
+                <img src="./../images/tomatoBlue/screenshot01_projectPage.png" alt="project page"/>
+            </div>
+            <div>
+                <h5> I used <a class="externalLink" href="https://github.com/teamcapybara/capybara" target="_blank">Capybara</a> to interact with the browser for testing
+                </h5>
+                <img src="./../images/tomatoBlue/screenshot01_code_definition.png" alt="step definition"/>
+            </div>
+        </div>
+        <br/><br/>
+        <div>
+            <h3>Demo Video:</h3>
+            <iframe src="https://player.vimeo.com/video/251008412" width="640" height="392" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 </body>
 </html>

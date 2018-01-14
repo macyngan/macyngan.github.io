@@ -71,7 +71,7 @@ hr {
 }
 
 #menu {
-    margin-left: 24px;
+    margin-left: 22px;
     padding-bottom: 8px;
 }
 
@@ -113,6 +113,13 @@ li a {
 .projectDescription .projectTitle-mortgage {
     color: rgb(255, 255, 255);
     background-color: rgb(219, 192, 210);
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
+.projectDescription .projectTitle-tomatoBlue {
+    color: rgb(255, 255, 255);
+    background-color: rgb(208, 195, 162);
     padding-left: 2px;
     padding-bottom: 2px;
 }
@@ -177,3 +184,8 @@ li a {
     width: 80%;
 }
 
+/*Url link to external web pages*/
+.externalLink {
+    border-bottom: 1px solid #71bbff;
+    color: #75d5fa;
+}
