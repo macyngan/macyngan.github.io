@@ -21,11 +21,12 @@ body {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .flex-container div img {
     width: 325px;
+    margin: 10px 15px;
 }
 
 .flex-container div img:hover {
