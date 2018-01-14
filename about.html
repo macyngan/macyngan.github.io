@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
+<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 <div class="container">
     <div class="nav">
         <div id="logo" >
@@ -49,12 +50,27 @@
                 <span>MySQL</span>
                 <span>MongoDB</span>
                 <span>Linux</span>
+                <span>AWS</span>
+                <span>Continuous Integration&nbsp;(CI)</span>
                 <span>Java</span>
                 <span>Ruby</span>
             </div>
         </div>
         <div>
             <h4>Experience</h4>
+            <div>
+                <p>> Designed and built applications for internal users to transcode videos and manage video metadata</p>
+                <p>> Improved and developed testing processes for continuous deployment environment</p>
+                <p>> Designed and implemented scalable, robust and reliable cloud-based web applications and RESTful API services</p>
+                <p>> Code reviewed and provided feedback to peers to keep codes clean, testable, and maintainable</p>
+                <p>> Identified opportunities and implement solutions to improve engineering productivity</p>
+                <p>> Translated functional and technical requirements into detailed architecture and design</p>
+                <p>> Added mobile responsiveness to existing consumer facing websites</p>
+                <p>> Developed test automation for UI, API, and unit tests</p>
+                <p>> Worked closely with product manager and UX designer to refine feature specifications</p>
+                <p>> Improved system security and made systems more robust</p>
+                <p>> Collaborated with stakeholders and gathered user feedback</p>
+            </div>
 
         </div>
         <div>
@@ -71,7 +87,23 @@
         </div>
     </div>
 </div>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
 
-<script src="javascript/vendor/jquery-3.2.1.min.js"></script>
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 </body>
 </html>
