@@ -264,7 +264,7 @@ div.inner-wrap:hover {
 
 }
 
-@media (min-width: 650px) and (max-width:890px ) {
+@media (min-width: 650px) and (max-width:800px ) {
     .flex-container div img {
         width: 250px;
         margin: 10px 10px;
