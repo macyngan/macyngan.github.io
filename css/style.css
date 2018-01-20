@@ -242,6 +242,19 @@ div.inner-wrap:hover {
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
+@media all and (max-width: 600px) {
+    .flex-menu div.menu-li{
+        font-size: 14px;
+        margin: 6px;
+    }
+
+    .flex-menu div.inner-wrap{
+        margin: 4px 0px;
+        display: inline-block;
+        padding: 4px 10px;
+    }
+}
+
 
 
 
