@@ -256,27 +256,18 @@ div.inner-wrap:hover {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     .flex-container div img {
-        width: 300px;
+        width: 100%;
+        margin: 20px auto;
     }
+
 }
 
-@media (min-width: 500px) and (max-width:600px ) {
+@media (min-width: 650px) and (max-width:890px ) {
     .flex-container div img {
-        width: 400px;
-    }
-}
-
-@media (min-width: 600px) and (max-width:1000px ) {
-    .flex-container div img {
-        width: 300px;
-    }
-}
-
-@media (min-width: 1000px) and (max-width:1200px ) {
-    .flex-container div img {
-        width: 400px;
+        width: 250px;
+        margin: 10px 10px;
     }
 }
 
