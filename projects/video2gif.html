@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Macy Ngan</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+<div class="container">
+    <div class="nav">
+        <div id="logo">
+            <h1 class="title">
+                <a href="../index.html">Macy Ngan</a>
+            </h1>
+
+            <div id="description">Full-Stack Software Engineer</div>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="../index.html">Portfolio</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+
+    <div class="projectDescription">
+        <br/>
+        <div>
+            <h2 class="projectTitle-video2gif">Video2Gif</h2>
+        </div>
+        <div>
+            <h4>Motivation</h4>
+            <p>
+                Funny gif can be entertaining, but gif is also useful when creating demo or tutorials.
+                It can demonstrate more information in few seconds. When I am creating my portfolio,
+                I was looking for a free video to gif converter to create demo pieces, but the ones
+                I found don't produce a high-quality gif and it takes a long time to upload
+                when the video file is large.
+            </p>
+            <p>
+                Therefore, I created my own video to gif converter Video2Gif.
+                It's a desktop application for Mac so I don't have to upload the video.
+                It produces high-quality gif and it also allows me to preview the output gif,
+                which is so useful if I am cutting the input video to specific time range for the gif.
+            </p>
+        </div>
+        <br/>
+        <div>
+            <h4>Screenshots:</h4>
+            <div>
+                <h5>Easy to use, just drag and drop your video to get started</h5>
+                <img src="./../images/video2Gif/screenshot01_homepage.png" alt="upload page"/>
+            </div>
+            <div>
+                <h5>
+                    Convert page allows you to set start time and end time, and use frames
+                    between those time to create the gif. You can see how your gif looks
+                    like in the preview window.
+                </h5>
+                <img src="./../images/video2Gif/screenshot02_convert.png" alt="convert"/>
+            </div>
+        </div>
+        <br />
+        <div>
+            <h4>How does Video2Gif work</h4>
+            <div>
+                <h5>(1) Drag and drop your video</h5>
+                <img src="./../images/video2Gif/img01_drop.gif" alt="upload"/>
+            </div>
+            <div>
+                <h5>(2) Set start time and end time to cut the video</h5>
+                <img src="./../images/video2Gif/img02_cut_time.gif" alt="cut time"/>
+            </div>
+            <div>
+                <h5>(3) Click convert, and click on the notification to open output gif</h5>
+                <img src="./../images/video2Gif/img03_convert.gif" alt="convert"/>
+            </div>
+        </div>
+        <br/><br/>
+        <div>
+            <h3>Demo Video:</h3>
+            <iframe allowFullScreen frameborder="0" height="564" mozallowfullscreen src="https://player.vimeo.com/video/251915732" webkitAllowFullScreen width="640"></iframe>
+        </div>
+    </div>
+</div>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+</body>
+</html>

@@ -125,6 +125,13 @@ li a {
     padding-bottom: 2px;
 }
 
+.projectDescription .projectTitle-video2gif {
+    color: rgb(255, 255, 255);
+    background-color: rgb(221, 186, 194);
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
 .projectDescription h4 {
     color: rgb(58, 58, 58);
 }
