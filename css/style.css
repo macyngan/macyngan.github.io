@@ -102,32 +102,26 @@ li a {
     text-decoration: none;
 }
 
-/* project detail page*/
-
-.projectDescription .projectTitle-webpagespeed {
-    color: rgb(255, 255, 255);
+/* special color for each project */
+.webpagespeed-color {
     background-color: rgb(208, 147, 164);
-    padding-left: 2px;
-    padding-bottom: 2px;
 }
 
-.projectDescription .projectTitle-mortgage {
-    color: rgb(255, 255, 255);
-    background-color: rgb(219, 192, 210);
-    padding-left: 2px;
-    padding-bottom: 2px;
-}
-
-.projectDescription .projectTitle-tomatoBlue {
-    color: rgb(255, 255, 255);
+.tomato-blue-color {
     background-color: rgb(208, 195, 162);
-    padding-left: 2px;
-    padding-bottom: 2px;
 }
 
-.projectDescription .projectTitle-video2gif {
-    color: rgb(255, 255, 255);
+.mortgage-calculator-color {
+    background-color: rgb(219, 192, 210);
+}
+
+.video2gif-color {
     background-color: rgb(221, 186, 194);
+}
+
+/* project detail page*/
+.project-title {
+    color: rgb(255, 255, 255);
     padding-left: 2px;
     padding-bottom: 2px;
 }
@@ -212,6 +206,42 @@ li a {
     width:100%;
     position:absolute;
 }
+
+
+/* projects menu on the bottom */
+.flex-menu  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.flex-menu div.menu-li {
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius:6px;
+}
+
+.flex-menu a {
+    color: white;
+}
+
+.flex-menu div.inner-wrap{
+    margin: 6px 0px;
+    display: inline-block;
+    padding: 4px 30px;
+}
+
+.flex-menu div.inner-wrap.active {
+    border-bottom: 1px solid white;
+}
+
+div.inner-wrap:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 500px) {
     .flex-container div img {
@@ -236,7 +266,6 @@ li a {
         width: 400px;
     }
 }
-
 
 
 
