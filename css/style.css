@@ -198,6 +198,20 @@ li a {
     color: #75d5fa;
 }
 
+.embed-container {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.embed-container iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 500px) {
     .flex-container div img {
@@ -222,6 +236,7 @@ li a {
         width: 400px;
     }
 }
+
 
 
 
